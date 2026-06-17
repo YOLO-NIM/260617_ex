@@ -42,5 +42,13 @@ public class Ex02 {
         char c2 = 123;
         System.out.println(c1 + " " + c2);
 
+        // 암(묵)시적 형변환, 명시적 형변환
+        long lll = 123; // 들어가짐 -> long이 차지할 수 있는 메모리가 더 넓기 때문에 굳이 뭔가 의식할 필요가 없음
+        int iii = (int) 3_145_928_000L; // 들어가지 못함
+        int iii2 = 'a'; // 변환 가능
+        double dd = 1;
+        int iii3 = (int) 3.141592;
+        System.out.println("dd = " + dd);
+        System.out.println("iii3 = " + iii3); // 소수점 부분을 탈락시키면 정수부로 넣을 수 있으니 그쪽 메모리를 탈락
     }
 }
