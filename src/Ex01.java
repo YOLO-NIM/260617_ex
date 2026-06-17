@@ -1,8 +1,15 @@
+/** 표준 출력과 기타 등등을 학습합*/
 public class Ex01 {
     // 진입점
+    /** 메인 메서드네용?*/
     public static void main(String[] args){
         // sout
         System.out.println("Hello World!");
+
+        // 주석 : //, /* */, /** */
+        // ctrl + / -> 한 줄 주석 (블럭 지정 후에 이 명령어 -> 한 줄을 여러 줄처럼 씀)
+        // ctrl + shift + / -> 여러 줄 주석 (묶음)
+        // /** */ => 특정한 클래스, 메서드 등에 붙으면 그걸 저장했을 때 추가 설명
 
         // (키워드) (타입) 식별자
         int day = 17; // int 정수 타입
